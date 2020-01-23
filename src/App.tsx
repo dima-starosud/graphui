@@ -1,26 +1,25 @@
-import React from "react";
+import axios from "axios";
+import React, {Component} from "react";
 import "./App.css";
 import logo from "./logo.svg";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HELLO!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// public async componentDidMount() {
+//   this.setState({isLoading: true});
+//   try {
+//     const result = await axios.get("http://localhost:8123/");
+//     console.log(result);
+//     this.setState({
+//       data: result.data,
+//       isLoading: false,
+//     });
+//   } catch (error) {
+//     console.log(error);
+//     this.setState({
+//       error,
+//       isLoading: false,
+//     });
+//   }
+// }
+// }
 
-export default App;
+// export default App;
